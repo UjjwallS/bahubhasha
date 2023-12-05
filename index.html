@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src ="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="website-general">
+            <img src="website-logo.png" alt="Logo" class="logo">
+            <h2 class="logo"><a href="#" class="name">Bahu Bhasha</a></h2>
+        </div>
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </label>
+        <ul class="all-links">
+          <div class="google-translator" id="google_element"></div>
+          <li><a href="#home">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="homepage" id="home">
+      <div class="content">
+        <div class="text">
+          <h1>Free Language Learning Platform</h1>
+          <p class="description">The Bahu Bhasha platform creates a tapestry of fluency by weaving together grammar, vocabulary, and cultural elements. Engage in interactive lectures, quizzes, and real-world discussions. Monitor your development and see how your language abilities improve. With Bahu Bhasha, open up a universe of communications.
+           </p>
+        </div>
+        <a href="login.html" class="explore-more" target="_blank">Explore More</a>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <h2>Pick Up</h2>
+      <p> Open up a universe of communication.</p>
+      <ul class="cards">
+        <li class="card">
+          <img src="lessons.png" alt="Lessons">
+          <h3>Lessons</h3>
+          <p> Embrace the beauty of mistakes, celebrate small victories, and make language a daily companion.</p>
+        </li>
+        <li class="card">
+          <img src="quizzes.png" alt="icons" class="quizzes-icon">
+          <h3>Quizzes</h3>
+          <p> Immediate feedback from quizzes refines your understanding, correcting errors and solidifying knowledge.</p>
+        </li>
+        <li class="card">
+          <img src="progress.png" alt="progress">
+          <h3>Progress Tracking</h3>
+          <p>It turns the journey of learning a language into an intentional, self-aware undertaking.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="about" id="about">
+      <h2>Reasons to count on us</h2>
+      <br>
+      <div class="row company-info">
+        Bahu Bhasha is a virtual classroom where you can pick up new languages without the traditional books and blackboards. Imagine it as a digital playground for your brain to explore and absorb words and phrases. These platforms offer a variety of tools, like interactive lessons, games, and quizzes, making the process feel more like a fun adventure than a tedious task. You can listen to native speakers, practice your pronunciation, and even chat with fellow language enthusiasts. It's like having a language teacher in your pocket, guiding you through the linguistic landscape at your own pace. Plus, these platforms often track your progress, so you can celebrate the small victories on your journey to becoming a language maestro. Whether you're learning for travel, work, or just the thrill of mastering a new tongue, these platforms provide a user-friendly bridge to connect you with a world of words.
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <br>
+      <p>Reach out to us for any inquiries or feedback.</p>
+      <div class="row">
+        <div class="col information">
+          <div class="contact-details">
+            <p><i class="fas fa-map-marker-alt"></i> Atria Institute of Technology, Hebbal, Bengaluru -  560024</p>
+            <p><i class="fas fa-envelope"></i> abc@gmail.com</p>
+            <p><i class="fas fa-phone"></i>9876543210</p>
+          </div>          
+        </div>
+        <div class="col form">
+          <form>
+            <input type="text" placeholder="Name*" required>
+            <input type="email" placeholder="Email*" required>
+            <textarea placeholder="Message*" required></textarea>
+            <button id="submit" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <span>Copyright &copy; 2023 All Rights Reserved</span>
+        <span class="link">
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+        </span>
+      </div>
+    </footer>
+
+    <script>
+      function loadGoogleTranslate() {
+        new google.translate.TranslateElement("google_element");
+      }
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link rel="stylesheet" href="explore.css">
+    <script src ="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="website-general">
+              <img src="website-logo.png" alt="Logo" class="logo">
+              <h2 class="logo"><a href="#" class="name">Bahu Bhasha</a></h2>
+          </div>
+          <input type="checkbox" id="menu-toggler">
+          <label for="menu-toggler" id="hamburger-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+              <path d="M0 0h24v24H0z" fill="none"/>
+              <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+            </svg>
+          </label>
+          <ul class="all-links">
+            <div class="google-translator" id="google_element"></div>
+            <li><a href="index.html" target="_blank">Back</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <p class="language-header">Which language would you like to learn?</p>
+
+      <div class="languages">
+        <div class="english">
+          <img src="english.png" alt="English">
+          <p class="p-language">English</p>
+          <button onclick=" redirectPageEnglishh()">Learn for free</a></button>
+        </div>
+        <div class="arabic">
+          <img src="Arabic.jpeg" alt="Arabic">
+          <p class="p-language">Arabic</p>
+          <button onclick=" redirectPageArabic()">Learn for free</a></button>
+        </div>
+        <div class="spanish">
+          <img src="Spanish.png" alt="Spanish">
+          <p class="p-language">Spanish</p>
+          <button onclick=" redirectPageSpanish()">Learn for free</a></button>
+        </div>
+        <div class="french">
+          <img src="French.png" alt="French">
+          <p class="p-language">French</p>
+          <button onclick=" redirectPageFrench()">Learn for free</a></button>
+        </div>
+        <div class="japanese">
+          <img src="Japanese.png" alt="Japanese">
+          <p class="p-language">Japanese</p>
+          <button onclick=" redirectPageJapanese()">Learn for free</a></button>
+        </div>
+        <div class="korean">
+          <img src="Korean.png" alt="Korean">
+          <p class="p-language">Korean</p>
+          <button onclick=" redirectPageKorean()">Learn for free</a></button>
+        </div>
+      </div>
+    
+      <script>
+        function redirectPageEnglishh() {
+          var form = document.getElementById("form");
+          window.location.href = "english-content.html";
+        }
+
+        function redirectPageArabic() {
+          var form = document.getElementById("form");
+          window.location.href = "arabic.html";
+        }
+
+        function redirectPageJapanese() {
+          var form = document.getElementById("form");
+          window.location.href = "japanese-content.html";
+        }
+
+        
+        function redirectPageSpanish() {
+          var form = document.getElementById("form");
+          window.location.href = "spanish-content.html";
+        }
+
+        
+        function redirectPageFrench() {
+          var form = document.getElementById("form");
+          window.location.href = "french-content.html";
+        }
+
+
+        function redirectPageKorean() {
+          var form = document.getElementById("form");
+          window.location.href = "korean-content.html";
+        }
+
+
+        function loadGoogleTranslate() {
+          new google.translate.TranslateElement("google_element");
+        }
+    
+
+      </script>
+
+</body>
+</html>
